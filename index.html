@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Vincebus Riveruptum">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Ficha del Estudiante</title>
+
+    <!-- Incluyemos Bootsrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/pagina.css"></link>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  
+  </head>
+<body class="bg-white">
+        
+    <div class="container-fluid">
+    <main>
+        <div class="titulo">
+            <div>
+                <h5>Ficha del Estudiante</h5>
+            </div>
+            <div>
+                <img alt="perfil" src="img/perfil.png" width="128" height="128">
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <!--ASIGNATURAS DEL ESTUDIANTE-->
+            <div class="col order-md-last">
+                <!--Curso-->
+                <div class="texto-asignaturas">
+                    <div> 
+                        <button id="botonagregarramo" type="submit" class="btn btn-secondary">+</button>
+                    </div> 
+                    <h id="tcurso">Curso:</h>                                  
+                </div>
+                
+                <!-- Cantidad de asignaturas-->
+                <h4 id="cantasignaturas" class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">Asignaturas</span>
+                    <span class="text-primary">Nota</span>
+                    <span class="text-primary">Eliminar</span>
+                    
+                </h4>
+                <ul id="listaasignaturas" class="list-group mb-3">                                
+                </ul>
+                <!--Menu Agregar Asignatura-->
+                <form id="menuagregarramo" class="card p-2">
+                <div class="entradas">
+                    <div><input type="text" class="form-control" list=valoresasignaturas placeholder="Asignatura">
+                        <datalist id=valoresasignaturas></datalist>
+                    </div>
+                    <div><input type="text" class="form-control" list=valoresobjetivo placeholder="Objetivo"></div>
+                        <datalist id=valoresobjetivo></datalist>
+                    <div><input type="text" class="form-control" placeholder="Nota"></div>
+
+                    <button id="btnadd" type="submit" class="btn btn-secondary">Agregar</button>
+                </div>
+                </form>
+            </div>
+            <!--DATOS DEL ESTUDIANTE-->
+            <div class="col">
+                <div id=nombreestudianteyboton>
+                    <div id=nombreestudiante></div>
+                    <div id=botoneditar>
+                        <button id="btneditar" class="btn btn-primary">Editar</button>
+                    </div>
+                </div>
+                <div id="columnadatos">
+                </div>
+            </div>
+        </div>
+        <!-- Boton Actualizar -->
+        <div class="text-center">
+            <hr class="my-4">
+            <button id="btnactualizar" class="w-25 btn btn-primary btn-lg" type="submit">Actualizar</button>
+            
+        </div>
+    </main>
+
+    </div>
+        <!--Scripts-->
+        <script src="js/bootstrap.bundle.min.js" async></script>
+        <script src="js/contenidos.js" async></script>
+    </body>
+</html>

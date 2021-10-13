@@ -1,0 +1,63 @@
+.container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo {
+  padding-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.titulo div {
+  margin: auto;
+}
+
+.titulo div h5 {
+  font-size: 48px;
+  font-family: 'Merriweather', serif;
+}
+
+.titulo img {
+  padding: 10%;
+}
+
+.texto-asignaturas {
+  padding-bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.texto-asignaturas h {
+  margin: auto;
+}
+
+.texto-asignaturas h2 {
+  margin: auto;
+  font-size: larger;
+}
+
+#nombreestudianteyboton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nombreestudianteyboton div {
+  margin: auto;
+}
+
+#columnadatos div {
+  padding-bottom: 0.5%;
+}
+
+.entradas div {
+  padding-bottom: 1%;
+}
